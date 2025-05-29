@@ -1,3 +1,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* Custom cow print pattern */
+.polka-dots {
+  background-image: 
+    radial-gradient(circle, #2B2B2B 30%, transparent 30%),
+    radial-gradient(circle, #F6A76E 30%, transparent 30%);
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px;
+  opacity: 0.3;
+}

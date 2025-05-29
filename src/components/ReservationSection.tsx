@@ -1,169 +1,71 @@
-import React, { useState } from 'react';
-import { CalendarIcon, ClockIcon, UsersIcon, CheckIcon } from 'lucide-react';
-
 export const ReservationSection = () => {
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormSubmitted(true);
-    // In a real app, you would send the form data to your server here
-  };
-
   return (
     <section id="reservation" className="py-16 bg-pale-apricot">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-[#3A3335] mb-3">
+        <h2 className="text-3xl font-bold text-center text-[#3A3335] mb-2">
           Reserve Your Visit
         </h2>
-        <p className="text-center text-gray-700 mb-10 max-w-2xl mx-auto">
-          Book your time slot in advance to guarantee your spot in our cat
-          lounge. Reservations are recommended, especially on weekends and
-          holidays.
+        <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+          Reservations help us manage capacity and ensure our cats' comfort. 
+          Choose from available time slots and secure your spot today.
         </p>
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2 bg-[#D4E7C5] p-8">
-                <h3 className="text-2xl font-bold text-[#3A3335] mb-6">
-                  Why Reserve?
-                </h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <div className="bg-white p-1 rounded-full mr-3">
-                      <CheckIcon size={16} className="text-[#3A3335]" />
+            <div className="p-8">
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex items-center">
+                    <div className="bg-[#D4E7C5] p-2 rounded-full mr-4">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
                     </div>
-                    <span className="text-[#3A3335]">
+                    <span className="text-[#3A3335] font-medium">
                       Guarantee your spot during busy hours
                     </span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-white p-1 rounded-full mr-3">
-                      <CheckIcon size={16} className="text-[#3A3335]" />
+                  </div>
+                  <div className="flex items-center">
+                    <div className="bg-[#D4E7C5] p-2 rounded-full mr-4">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
                     </div>
-                    <span className="text-[#3A3335]">
-                      Choose the time that works best for you
+                    <span className="text-[#3A3335] font-medium">
+                      Choose a time that works for you
                     </span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-white p-1 rounded-full mr-3">
-                      <CheckIcon size={16} className="text-[#3A3335]" />
+                  </div>
+                  <div className="flex items-center">
+                    <div className="bg-[#D4E7C5] p-2 rounded-full mr-4">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                    </svg>
                     </div>
-                    <span className="text-[#3A3335]">
-                      Special rates for advance bookings
+                    <span className="text-[#3A3335] font-medium">
+                      Enjoy discounted rates for advance bookings
                     </span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-white p-1 rounded-full mr-3">
-                      <CheckIcon size={16} className="text-[#3A3335]" />
+                  </div>
+                  <div className="flex items-center">
+                    <div className="bg-[#D4E7C5] p-2 rounded-full mr-4">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
                     </div>
-                    <span className="text-[#3A3335]">
+                    <span className="text-[#3A3335] font-medium">
                       Plan your visit around our cats' active hours
                     </span>
-                  </li>
-                </ul>
-                <div className="mt-8">
-                  <h4 className="font-semibold text-[#3A3335] mb-2">
-                    Need Help?
-                  </h4>
-                  <p className="text-[#3A3335]">
-                    Call us at (555) 123-4567 or email{' '}
-                    <a href="mailto:reservations@calicocatcafe.com" className="underline">
-                      reservations@calicocatcafe.com
-                    </a>
-                  </p>
+                  </div>
                 </div>
-              </div>
-              <div className="md:w-1/2 p-8">
-                {formSubmitted ? <div className="h-full flex flex-col items-center justify-center text-center">
-                    <div className="bg-[#D4E7C5] p-3 rounded-full mb-4">
-                      <CheckIcon size={32} className="text-[#3A3335]" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-[#3A3335] mb-2">
-                      Reservation Received!
-                    </h3>
-                    <p className="text-gray-700 mb-4">
-                      Thank you for booking with us. We've sent a confirmation
-                      to your email.
-                    </p>
-                    <button onClick={() => setFormSubmitted(false)} className="text-[#3A3335] underline">
-                      Make another reservation
-                    </button>
-                  </div> : <form onSubmit={handleSubmit}>
-                    <h3 className="text-2xl font-bold text-[#3A3335] mb-6">
-                      Book Your Time Slot
-                    </h3>
-                    <div className="space-y-4">
-                      <div>
-                        <label htmlFor="name" className="block text-[#3A3335] font-medium mb-1">
-                          Your Name
-                        </label>
-                        <input type="text" id="name" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFCAA7]" required />
-                      </div>
-                      <div>
-                        <label htmlFor="email" className="block text-[#3A3335] font-medium mb-1">
-                          Email Address
-                        </label>
-                        <input type="email" id="email" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFCAA7]" required />
-                      </div>
-                      <div className="flex space-x-4">
-                        <div className="flex-1">
-                          <label htmlFor="date" className="block text-[#3A3335] font-medium mb-1">
-                            <div className="flex items-center">
-                              <CalendarIcon size={16} className="mr-1" />
-                              <span>Date</span>
-                            </div>
-                          </label>
-                          <input type="date" id="date" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFCAA7]" required />
-                        </div>
-                        <div className="flex-1">
-                          <label htmlFor="time" className="block text-[#3A3335] font-medium mb-1">
-                            <div className="flex items-center">
-                              <ClockIcon size={16} className="mr-1" />
-                              <span>Time</span>
-                            </div>
-                          </label>
-                          <select id="time" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFCAA7]" required>
-                            <option value="">Select Time</option>
-                            <option value="10:00">10:00 AM</option>
-                            <option value="11:00">11:00 AM</option>
-                            <option value="12:00">12:00 PM</option>
-                            <option value="13:00">1:00 PM</option>
-                            <option value="14:00">2:00 PM</option>
-                            <option value="15:00">3:00 PM</option>
-                            <option value="16:00">4:00 PM</option>
-                            <option value="17:00">5:00 PM</option>
-                            <option value="18:00">6:00 PM</option>
-                            <option value="19:00">7:00 PM</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div>
-                        <label htmlFor="guests" className="block text-[#3A3335] font-medium mb-1">
-                          <div className="flex items-center">
-                            <UsersIcon size={16} className="mr-1" />
-                            <span>Number of Guests</span>
-                          </div>
-                        </label>
-                        <select id="guests" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFCAA7]" required>
-                          <option value="1">1 Person</option>
-                          <option value="2">2 People</option>
-                          <option value="3">3 People</option>
-                          <option value="4">4 People</option>
-                          <option value="5">5 People</option>
-                          <option value="6">6 People</option>
-                        </select>
-                      </div>
-                      <div>
-                        <label htmlFor="special" className="block text-[#3A3335] font-medium mb-1">
-                          Special Requests (Optional)
-                        </label>
-                        <textarea id="special" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFCAA7]" rows={3}></textarea>
-                      </div>
-                      <button type="submit" className="w-full bg-[#FFCAA7] text-[#3A3335] py-3 rounded-lg font-medium hover:bg-[#ffc093] transition-colors">
-                        Reserve Now
-                      </button>
-                    </div>
-                  </form>}
+                <div className="text-center">
+                  <div className="bg-[#3A3335] text-white rounded-full py-4 px-8 inline-block">
+                    <script id="setmore_script" type="text/javascript" src="https://assets.setmore.com/integration/static/setmoreIframeLive.js"></script>
+                    <a className="float-none inline-block" id="Setmore_button_iframe" href="https://calicocatcafe.setmore.com">
+                      <span className="text-xl font-bold">Book an Appointment</span>
+                    </a>
+                  </div>
+                </div>
+                <p className="text-center text-gray-600 mt-4">
+                  Need help? Call 608-608-6518 or email reservations@calicocatcafe.com
+                </p>
               </div>
             </div>
           </div>
@@ -171,4 +73,4 @@ export const ReservationSection = () => {
       </div>
     </section>
   );
-}
+};

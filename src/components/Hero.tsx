@@ -12,15 +12,15 @@ export const Hero = () => {
             />
           </div>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
-            <a 
-              href="#book" 
+            <button 
+              onClick={() => window.open('https://calicocatcafe.setmore.com/', '_blank')}
               className="bg-[#F6A76E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#E69A5E] transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
             >
               Book Your Visit
-            </a>
+            </button>
             <a 
               href="#about" 
-              className="border-2 border-[#F6A76E] text-[#F69A5E] px-8 py-4 rounded-lg font-semibold hover:bg-[#E69A5E] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
+              className="bg-[#F6A76E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#E69A5E] transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
             >
               Learn More
             </a>

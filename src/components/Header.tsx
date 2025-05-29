@@ -9,9 +9,9 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img src="https://placehold.co/50x50/FFCAA7/3A3335?text=CC" alt="Calico Cat Cafe Logo" className="h-12 w-12 rounded-full" />
+            <img src="/assets/logowindow.png" alt="Calico Cat Café Logo" className="h-[48px] w-[48px]" />
             <h1 className="ml-3 text-[#3A3335] font-bold text-xl md:text-2xl">
-              Calico Cat Cafe
+              Calico Cat Café
             </h1>
           </div>
           {/* Social Media Icons */}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="calico" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+            <!-- Paw prints -->
+            <path d="M100 100 c0 -10 15 -15 20 0 c0 10 -15 15 -20 0" fill="none" stroke="#FFA07A" stroke-width="2" opacity="0.2"/>
+            <path d="M150 50 c0 -10 15 -15 20 0 c0 10 -15 15 -20 0" fill="none" stroke="#8B4513" stroke-width="2" opacity="0.2"/>
+            
+            <!-- Cat ears -->
+            <path d="M50 50 l-10 -20 l20 0" fill="#8B4513" opacity="0.2"/>
+            <path d="M150 150 l10 -20 l-20 0" fill="#8B4513" opacity="0.2"/>
+            
+            <!-- Lounging cat -->
+            <path d="M100 150 q-20 0 -20 -20 q0 -20 20 -20 q20 0 20 20 q0 20 -20 20" fill="#8B4513" opacity="0.2"/>
+            
+            <!-- Additional elements -->
+            <circle cx="50" cy="150" r="5" fill="#8B4513" opacity="0.2"/>
+            <circle cx="150" cy="50" r="5" fill="#FFA07A" opacity="0.2"/>
+        </pattern>
+    </defs>
+    <rect width="200" height="200" fill="url(#calico)"/>
+</svg>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TicketIcon, ClockIcon, CoffeeIcon, UsersIcon } from 'lucide-react';
+import { TicketIcon, ClockIcon, UsersIcon } from 'lucide-react';
 export const AdmissionSection = () => {
   return <section id="admission" className="py-16 bg-blush-pink">
       <div className="container mx-auto px-4">
@@ -22,7 +22,7 @@ export const AdmissionSection = () => {
                       Standard Admission
                     </h4>
                     <p className="text-[#3A3335]">
-                      $15 per hour / $25 for two hours
+                      $15 per half hour / $20 per 1 hour
                     </p>
                   </div>
                 </div>
@@ -35,23 +35,11 @@ export const AdmissionSection = () => {
                       Group Discount
                     </h4>
                     <p className="text-[#3A3335]">
-                      Groups of 4+: $12 per person per hour
+                      Groups of 4+: $12 per person per half hour or $17 per person for 1 hour
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start">
-                  <div className="bg-white p-2 rounded-full mr-4">
-                    <CoffeeIcon size={20} className="text-[#3A3335]" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-[#3A3335]">
-                      Cafe Package
-                    </h4>
-                    <p className="text-[#3A3335]">
-                      $20 includes 1-hour visit + beverage
-                    </p>
-                  </div>
-                </div>
+
               </div>
             </div>
             <div className="md:w-1/2 p-8">
@@ -82,6 +70,7 @@ export const AdmissionSection = () => {
                     <li>Comfortable seating in our cat lounge</li>
                     <li>Free WiFi</li>
                     <li>Cat toys to play with</li>
+                    <li>Board games to enjoy</li>
                   </ul>
                 </div>
                 <div>

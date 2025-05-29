@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPinIcon, ClockIcon, PhoneIcon, MailIcon } from 'lucide-react';
 export const LocationSection = () => {
-  return <section id="location" className="py-16 bg-deep-charcoal">
+  return <section id="location" className="py-16 bg-warm-sand">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-[#3A3335] mb-12">
           Find Us

@@ -1,5 +1,14 @@
 import { useState } from 'react';
-import { MenuIcon, XIcon, InstagramIcon, FacebookIcon, TwitterIcon } from 'lucide-react';
+import { MenuIcon, XIcon, InstagramIcon, FacebookIcon } from 'lucide-react';
+
+// TikTok Icon Component using the provided image
+const TikTokIcon = ({ className = '' }) => (
+  <img 
+    src="/assets/tiktok.png" 
+    alt="TikTok" 
+    className={`w-5 h-5 ${className}`}
+  />
+);
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,8 +88,14 @@ export const Header = () => {
             <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] transition-colors">
               <FacebookIcon size={20} />
             </a>
-            <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] transition-colors">
-              <TwitterIcon size={20} />
+            <a 
+              href="https://www.tiktok.com/@calicocatcafenj" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#3A3335] hover:text-[#FF7F50] transition-colors"
+              aria-label="TikTok"
+            >
+              <TikTokIcon className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -170,8 +185,14 @@ export const Header = () => {
                 <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7]">
                   <FacebookIcon size={20} />
                 </a>
-                <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7]">
-                  <TwitterIcon size={20} />
+                <a 
+                  href="https://www.tiktok.com/@calicocatcafenj" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#3A3335] hover:text-[#FFCAA7]"
+                  aria-label="TikTok"
+                >
+                  <TikTokIcon className="w-5 h-5" />
                 </a>
               </div>
             </ul>

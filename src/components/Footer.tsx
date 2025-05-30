@@ -1,5 +1,5 @@
 import React from 'react';
-import { InstagramIcon, FacebookIcon, TwitterIcon, HeartIcon } from 'lucide-react';
+import { InstagramIcon, FacebookIcon, HeartIcon } from 'lucide-react';
 export const Footer = () => {
   return <footer className="bg-[#3A3335] text-white py-12">
       <div className="container mx-auto px-4">
@@ -14,77 +14,59 @@ export const Footer = () => {
               comfort, and delicious treats.
             </p>
             <div className="mt-6 flex space-x-4">
-              <a href="#" className="text-white hover:text-[#FFCAA7]">
-                <InstagramIcon size={24} />
+              <a href="#" className="text-black hover:text-[#FF7F50] transition-colors">
+                <InstagramIcon size={24} strokeWidth={1.5} />
               </a>
-              <a href="#" className="text-white hover:text-[#FFCAA7]">
-                <FacebookIcon size={24} />
+              <a href="#" className="text-black hover:text-[#FF7F50] transition-colors">
+                <FacebookIcon size={24} strokeWidth={1.5} />
               </a>
-              <a href="#" className="text-white hover:text-[#FFCAA7]">
-                <TwitterIcon size={24} />
-              </a>
-              <a href="#" className="text-white hover:text-[#FFCAA7]">
-                <div size={24} />
+              <a href="https://www.tiktok.com/@calicocatcafenj" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <img src="/assets/tiktok.png" alt="TikTok" className="w-6 h-6" />
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7]">
+                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#book" className="text-gray-300 hover:text-[#FFCAA7]">
+                  <a href="#book" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
                     Book Now
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7]">
-                    Our Story
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7]">
+                  <a href="#menu" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
                     Menu
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7]">
-                    Shop
+                  <a href="#rescue" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
+                    Rescues
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Information</h3>
+              <h3 className="text-lg font-semibold mb-4">Info</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7]">
-                    FAQ
+                  <a href="#about" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
+                    Our Story
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7]">
+                  <a href="#team" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
                     Our Team
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7]">
-                    Rescues
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7]">
-                    Sponsors
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7]">
-                    Employment
+                  <a href="#faq" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
+                    FAQ
                   </a>
                 </li>
               </ul>
@@ -92,9 +74,9 @@ export const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <ul className="space-y-2">
-                <li className="text-gray-300">123 Whisker Lane</li>
-                <li className="text-gray-300">Catville, CA 90210</li>
-                <li className="text-gray-300">(555) 123-4567</li>
+                <li className="text-gray-300">918 White Horse Pike</li>
+                <li className="text-gray-300">Oaklyn, NJ 08107</li>
+                <li className="text-gray-300">(609) 608-6518</li>
                 <li className="text-gray-300">hello@calicocatcafe.com</li>
               </ul>
             </div>

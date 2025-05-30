@@ -34,7 +34,12 @@ export const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="#book" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
+                <a 
+                  href="https://calicocatcafe.setmore.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base"
+                >
                   Book Now
                 </a>
               </li>
@@ -109,7 +114,12 @@ export const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="#book" className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block">
+                <a 
+                  href="https://calicocatcafe.setmore.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block"
+                >
                   Book Now
                 </a>
               </li>

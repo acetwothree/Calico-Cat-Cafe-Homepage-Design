@@ -1,4 +1,3 @@
-import React from 'react';
 export const GallerySection = () => {
   const images = [{
     url: 'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
@@ -22,11 +21,10 @@ export const GallerySection = () => {
   return <section id="gallery" className="py-16 bg-warm-sand">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-[#3A3335] mb-3">
-          Our Cafe & Cats
+          Our Cafe & Art
         </h2>
         <p className="text-center text-gray-700 mb-10 max-w-2xl mx-auto">
-          Take a peek at our cozy cafe and meet some of our adorable feline
-          residents. Each cat has their own unique personality and story.
+          We are so proud of the community that helped us build this space! Take a peek inside our cafe and lounge to see the incredible artwork created by dozens of talented local volunteers. Each piece of art tells its own unique story and makes our space feel like home.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {images.map((image, index) => <div key={index} className="overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-[1.02]">

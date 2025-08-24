@@ -4,6 +4,21 @@ export const FAQPage = () => {
       <div className="container mx-auto px-4 max-w-4xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-[#3A3335] mb-8 md:mb-12">Frequently Asked Questions</h1>
 
+        {/* Our Separate Spaces */}
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
+          <h2 className="text-xl md:text-2xl font-bold text-[#3A3335] mb-4 md:mb-6 pb-2 border-b border-gray-100">Our Separate Spaces</h2>
+          <div className="space-y-5 md:space-y-6">
+            <div>
+              <h3 className="text-lg font-semibold text-[#3A3335]">Q: Are the cats and food completely separated?</h3>
+              <p className="text-gray-700 mt-2">A: Yes. The health and safety of our guests and cats is our top priority. The cafe area and the cat lounge are two completely separate spaces, separated by a secure "buffer room." This design ensures that no cats will ever be in the cafe area where food is prepared and consumed, and no food or drinks are allowed inside the cat lounge.</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-[#3A3335]">Q: I have cat allergies. Can I still visit?</h3>
+              <p className="text-gray-700 mt-2">A: Absolutely! Our cafe area is entirely free of cats. The cat lounge is a separate, sealed space, which significantly reduces the presence of cat dander in the cafe. This allows guests with cat allergies to enjoy our food, drinks, and snacks in a cat-free environment and still be able to watch our feline friends through the window from the cafe area.</p>
+            </div>
+          </div>
+        </div>
+
         {/* Cafe & Cat Lounge Access */}
         <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
           <h2 className="text-xl md:text-2xl font-bold text-[#3A3335] mb-4 md:mb-6 pb-2 border-b border-gray-100">Cafe & Cat Lounge Access</h2>

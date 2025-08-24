@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MenuIcon, XIcon, InstagramIcon, FacebookIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 // TikTok Icon Component using the provided image
 const TikTokIcon = ({ className = '' }) => (
@@ -38,9 +39,14 @@ export const Header = () => {
           <nav className="flex-1 flex justify-center pr-16">
             <ul className="flex gap-8 -ml-7">
               <li>
-                <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
+                <Link to="/" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
                   Home
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link to="/faq" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
+                  FAQ
+                </Link>
               </li>
               <li>
                 <a 
@@ -70,11 +76,6 @@ export const Header = () => {
               <li>
                 <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
                   Menu
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
-                  FAQ
                 </a>
               </li>
             </ul>
@@ -123,12 +124,25 @@ export const Header = () => {
         {/* Mobile Menu */}
         {isMenuOpen && <nav className="md:hidden mt-4 pb-4">
             <ul className="flex flex-col space-y-3">
-              <li>
-                <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] font-medium block">
+              <li className="mb-4">
+                <Link 
+                  to="/" 
+                  className="text-xl text-[#3A3335] hover:text-[#FF7F50] font-medium block"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   Home
-                </a>
+                </Link>
               </li>
-              <li>
+              <li className="mb-4">
+                <Link 
+                  to="/faq" 
+                  className="text-xl text-[#3A3335] hover:text-[#FF7F50] font-medium block"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  FAQ
+                </Link>
+              </li>
+              <li className="mb-4">
                 <a 
                   href="https://calicocatcafe.setmore.com/" 
                   target="_blank" 

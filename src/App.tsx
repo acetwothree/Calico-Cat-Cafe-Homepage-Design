@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { FAQPage } from './pages/FAQPage';
+import { OurStoryPage } from './pages/OurStoryPage';
 
 const AnnouncementBanner = () => {
   return (
@@ -23,6 +24,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/our-story" element={<OurStoryPage />} />
         </Routes>
         <Footer />
       </div>

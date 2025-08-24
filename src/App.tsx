@@ -4,6 +4,7 @@ import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { FAQPage } from './pages/FAQPage';
 import { OurStoryPage } from './pages/OurStoryPage';
+import { OurTeamPage } from './pages/OurTeamPage';
 
 const AnnouncementBanner = () => {
   return (
@@ -25,6 +26,7 @@ export function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/our-story" element={<OurStoryPage />} />
+          <Route path="/our-team" element={<OurTeamPage />} />
         </Routes>
         <Footer />
       </div>

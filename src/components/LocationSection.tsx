@@ -2,7 +2,7 @@ import { MapPinIcon, ClockIcon, PhoneIcon, NavigationIcon } from 'lucide-react';
 
 export const LocationSection = () => {
   const address = "918 White Horse Pike, Oaklyn, NJ 08028";
-  const phone = "(609) 608-6518";
+  const phone = "(856) 209-4972";
   const encodedAddress = encodeURIComponent(address);
   const googleMapsUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.764521810106!2d-75.0852!3d39.9017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c7f8b9b9b9b9%3A0x9b9b9b9b9b9b9b9b!2s${encodedAddress}!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus`;
   const directionsUrl = `https://www.google.com/maps/dir//${encodedAddress}`;
@@ -57,8 +57,7 @@ export const LocationSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#3A3335]">Hours</h4>
-                    <p className="text-gray-700">Tuesday - Sunday: 10am - 8pm</p>
-                    <p className="text-gray-700">Monday: Closed</p>
+                    <p className="text-gray-700">Daily: 9am - 9pm</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -83,7 +82,7 @@ export const LocationSection = () => {
                     We're conveniently located near Cherry Hill and just steps from a Wawa.
                   </p>
                   <p className="text-gray-700">
-                    Free parking is available on the street in front and to the side of the building for our café guests.
+                    Free parking is available on the street in front and to the side of the building for our café guests. Please do not park in the private lot behind the building.
                   </p>
                 </div>
               </div>

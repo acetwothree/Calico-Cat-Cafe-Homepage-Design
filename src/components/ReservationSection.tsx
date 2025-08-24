@@ -64,7 +64,7 @@ export const ReservationSection = () => {
                   </div>
                 </div>
                 <p className="text-center text-gray-600 mt-4">
-                  Need help? Call 608-608-6518 or email reservations@calicocatcafe.com
+                  Need help? Call 856-209-4972 or email hello@calicocatcafe.com
                 </p>
               </div>
             </div>

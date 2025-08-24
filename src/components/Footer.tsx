@@ -76,7 +76,7 @@ export const Footer = () => {
               <ul className="space-y-2">
                 <li className="text-gray-300">918 White Horse Pike</li>
                 <li className="text-gray-300">Oaklyn, NJ 08107</li>
-                <li className="text-gray-300">(609) 608-6518</li>
+                <li className="text-gray-300">(856) 209-4972</li>
                 <li className="text-gray-300">hello@calicocatcafe.com</li>
               </ul>
             </div>

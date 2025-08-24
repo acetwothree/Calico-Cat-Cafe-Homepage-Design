@@ -1,5 +1,4 @@
-import React from 'react';
-import { PawPrintIcon, CarIcon, CoffeeIcon, UtensilsIcon, HeartIcon } from 'lucide-react';
+import { PawPrintIcon, CarIcon, UtensilsIcon, HeartIcon } from 'lucide-react';
 export const AboutSection = () => {
   return <section id="about" className="py-16 bg-soft-cream">
       <div className="container mx-auto px-4">
@@ -35,7 +34,7 @@ export const AboutSection = () => {
               </h3>
             </div>
             <p className="text-gray-700">
-              Meet our family of 6 rescue cats, each with their own personality
+              Meet our family of 8-10 rescue cats, each with their own personality
               and charm. All our cats have been rescued, rehabilitated, and are
               available for adoption to loving homes.
             </p>
@@ -60,16 +59,14 @@ export const AboutSection = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <div className="bg-[#FFCAA7] p-3 rounded-full">
-                <CoffeeIcon size={24} className="text-[#3A3335]" />
+                <UtensilsIcon size={24} className="text-[#3A3335]" />
               </div>
               <h3 className="ml-4 text-xl font-semibold text-[#3A3335]">
                 Drinks & Delicious Treats
               </h3>
             </div>
             <p className="text-gray-700">
-              We offer a variety of prepackaged beverages and snacks, including
-              cold drinks, classic favorites, and tasty treats perfect for enjoying
-              during your visit with our cats.
+              We offer a variety of prepackaged beverages and snacks. Be sure to check out our instant ramen bar and other tasty treats perfect for enjoying during your visit with our cats.
             </p>
           </div>
         </div>

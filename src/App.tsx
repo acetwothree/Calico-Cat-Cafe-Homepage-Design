@@ -6,6 +6,7 @@ import { FAQPage } from './pages/FAQPage';
 import { OurStoryPage } from './pages/OurStoryPage';
 import { OurTeamPage } from './pages/OurTeamPage';
 import { RescuesPage } from './pages/RescuesPage';
+import { MenuPage } from './pages/MenuPage';
 
 const AnnouncementBanner = () => {
   return (
@@ -29,6 +30,7 @@ export function App() {
           <Route path="/our-story" element={<OurStoryPage />} />
           <Route path="/our-team" element={<OurTeamPage />} />
           <Route path="/rescues" element={<RescuesPage />} />
+          <Route path="/menu" element={<MenuPage />} />
         </Routes>
         <Footer />
       </div>

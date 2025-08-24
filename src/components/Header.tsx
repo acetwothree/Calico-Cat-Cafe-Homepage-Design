@@ -69,9 +69,9 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
+                <Link to="/rescues" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
                   Rescues
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
@@ -171,9 +171,13 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block">
+                <Link 
+                  to="/rescues" 
+                  className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   Rescues
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block">

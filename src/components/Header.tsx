@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MenuIcon, XIcon, InstagramIcon, FacebookIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AcuityButton } from './AcuityButton';
 
 // TikTok Icon Component using the provided image
 const TikTokIcon = ({ className = '' }) => (
@@ -49,14 +50,11 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <a 
-                  href="https://calicocatcafe.setmore.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base"
-                >
-                  Book Now
-                </a>
+                <AcuityButton>
+                  <span className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">
+                    Book Now
+                  </span>
+                </AcuityButton>
               </li>
               <li>
                 <Link to="/our-story" className="text-[#3A3335] hover:text-[#FF7F50] font-medium text-base">

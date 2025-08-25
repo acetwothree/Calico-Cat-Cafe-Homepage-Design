@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const GallerySection = () => {
   const images = [{
     url: 'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
@@ -32,9 +34,12 @@ export const GallerySection = () => {
             </div>)}
         </div>
         <div className="text-center mt-10">
-          <a href="#" className="inline-block bg-[#FFCAA7] text-[#3A3335] px-6 py-3 rounded-lg font-medium hover:bg-[#ffc093] transition-colors">
+          <Link 
+            to="/gallery" 
+            className="inline-block bg-[#FFCAA7] text-[#3A3335] px-6 py-3 rounded-lg font-medium hover:bg-[#ffc093] transition-colors"
+          >
             View Our Full Gallery
-          </a>
+          </Link>
         </div>
       </div>
     </section>;

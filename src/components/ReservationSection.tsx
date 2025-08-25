@@ -1,3 +1,5 @@
+import { AcuityButton } from './AcuityButton';
+
 export const ReservationSection = () => {
   return (
     <section id="reservation" className="py-16 bg-pale-apricot">
@@ -56,12 +58,11 @@ export const ReservationSection = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="bg-[#3A3335] text-white rounded-full py-4 px-8 inline-block">
-                    <script id="setmore_script" type="text/javascript" src="https://assets.setmore.com/integration/static/setmoreIframeLive.js"></script>
-                    <a className="float-none inline-block" id="Setmore_button_iframe" href="https://calicocatcafe.setmore.com">
-                      <span className="text-xl font-bold">Book an Appointment</span>
-                    </a>
-                  </div>
+                  <AcuityButton>
+                    <div className="bg-[#F6A76E] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#E69A5E] transition-all duration-300 ease-in-out transform hover:scale-105 text-center min-w-[220px] text-lg">
+                      Book an Appointment
+                    </div>
+                  </AcuityButton>
                 </div>
                 <p className="text-center text-gray-600 mt-4">
                   Need help? Call 856-209-4972 or email hello@calicocatcafe.com

@@ -7,6 +7,7 @@ import { OurStoryPage } from './pages/OurStoryPage';
 import { OurTeamPage } from './pages/OurTeamPage';
 import { RescuesPage } from './pages/RescuesPage';
 import { MenuPage } from './pages/MenuPage';
+import { GalleryPage } from './pages/GalleryPage';
 
 const AnnouncementBanner = () => {
   return (
@@ -31,6 +32,7 @@ export function App() {
           <Route path="/our-team" element={<OurTeamPage />} />
           <Route path="/rescues" element={<RescuesPage />} />
           <Route path="/menu" element={<MenuPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Routes>
         <Footer />
       </div>

@@ -1,3 +1,5 @@
+import { AcuityButton } from './AcuityButton';
+
 export const Hero = () => {
   return (
     <section id="hero" className="h-[80vh] md:h-[60vh] bg-[#FFF8F0] flex flex-col justify-center items-center relative overflow-hidden">
@@ -12,12 +14,11 @@ export const Hero = () => {
             />
           </div>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
-            <button 
-              onClick={() => window.open('https://calicocatcafe.setmore.com/', '_blank')}
-              className="bg-[#F6A76E] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#E69A5E] transition-all duration-300 ease-in-out transform hover:scale-105 text-center min-w-[180px]"
-            >
-              Book Your Visit
-            </button>
+            <AcuityButton>
+              <div className="bg-[#F6A76E] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#E69A5E] transition-all duration-300 ease-in-out transform hover:scale-105 text-center min-w-[180px]">
+                Book Your Visit
+              </div>
+            </AcuityButton>
             <a 
               href="#about" 
               className="bg-[#F6A76E] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#E69A5E] transition-all duration-300 ease-in-out transform hover:scale-105 text-center min-w-[180px]"

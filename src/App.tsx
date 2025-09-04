@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import { ScrollToTop } from './components/ScrollToTop';
 import { HomePage } from './pages/HomePage';
 import { FAQPage } from './pages/FAQPage';
 import { OurStoryPage } from './pages/OurStoryPage';
@@ -23,6 +24,7 @@ export function App() {
   return (
     <Router>
       <div className="font-sans bg-[#FFF1E6] min-h-screen">
+        <ScrollToTop />
         <AnnouncementBanner />
         <Header />
         <Routes>

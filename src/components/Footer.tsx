@@ -1,5 +1,7 @@
-import React from 'react';
 import { InstagramIcon, FacebookIcon, HeartIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { AcuityButton } from './AcuityButton';
+
 export const Footer = () => {
   return <footer className="bg-[#3A3335] text-white py-12">
       <div className="container mx-auto px-4">
@@ -14,10 +16,10 @@ export const Footer = () => {
               comfort, and delicious treats.
             </p>
             <div className="mt-6 flex space-x-4">
-              <a href="#" className="text-black hover:text-[#FF7F50] transition-colors">
+              <a href="https://www.instagram.com/calicocatcafenj" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#FF7F50] transition-colors">
                 <InstagramIcon size={24} strokeWidth={1.5} />
               </a>
-              <a href="#" className="text-black hover:text-[#FF7F50] transition-colors">
+              <a href="https://www.facebook.com/calicocatcafenj" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#FF7F50] transition-colors">
                 <FacebookIcon size={24} strokeWidth={1.5} />
               </a>
               <a href="https://www.tiktok.com/@calicocatcafenj" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
@@ -30,24 +32,26 @@ export const Footer = () => {
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
+                  <Link to="/" className="text-gray-300 hover:text-[#FFCAA7] transition-colors block" onClick={() => window.scrollTo(0, 0)}>
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#book" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
-                    Book Now
-                  </a>
+                  <AcuityButton className="w-full text-left p-0">
+                    <span className="text-gray-300 hover:text-[#FFCAA7] transition-colors font-normal">
+                      Book Now
+                    </span>
+                  </AcuityButton>
                 </li>
                 <li>
-                  <a href="#menu" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
+                  <Link to="/menu" className="text-gray-300 hover:text-[#FFCAA7] transition-colors block" onClick={() => window.scrollTo(0, 0)}>
                     Menu
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#rescue" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
+                  <Link to="/rescues" className="text-gray-300 hover:text-[#FFCAA7] transition-colors block" onClick={() => window.scrollTo(0, 0)}>
                     Rescues
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -55,19 +59,19 @@ export const Footer = () => {
               <h3 className="text-lg font-semibold mb-4">Info</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#about" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
+                  <Link to="/our-story" className="text-gray-300 hover:text-[#FFCAA7] transition-colors block" onClick={() => window.scrollTo(0, 0)}>
                     Our Story
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#team" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
+                  <Link to="/our-team" className="text-gray-300 hover:text-[#FFCAA7] transition-colors block" onClick={() => window.scrollTo(0, 0)}>
                     Our Team
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#faq" className="text-gray-300 hover:text-[#FFCAA7] transition-colors">
+                  <Link to="/faq" className="text-gray-300 hover:text-[#FFCAA7] transition-colors block" onClick={() => window.scrollTo(0, 0)}>
                     FAQ
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

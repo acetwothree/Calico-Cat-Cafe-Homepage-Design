@@ -81,10 +81,22 @@ export const Header = () => {
 
           {/* Right Section - Social Icons */}
           <div className="flex items-center gap-4 pl-5">
-            <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] transition-colors">
+            <a 
+              href="https://www.instagram.com/calicocatcafenj/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#3A3335] hover:text-[#FF7F50] transition-colors"
+              aria-label="Instagram"
+            >
               <InstagramIcon size={20} />
             </a>
-            <a href="#" className="text-[#3A3335] hover:text-[#FF7F50] transition-colors">
+            <a 
+              href="https://www.facebook.com/p/Calico-Cat-Cafe-61578005157205/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#3A3335] hover:text-[#FF7F50] transition-colors"
+              aria-label="Facebook"
+            >
               <FacebookIcon size={20} />
             </a>
             <a 
@@ -120,40 +132,38 @@ export const Header = () => {
           </button>
         </div>
         {/* Mobile Menu */}
-        {isMenuOpen && <nav className="md:hidden mt-4 pb-4">
-            <ul className="flex flex-col space-y-3">
-              <li className="mb-4">
+        {isMenuOpen && (
+          <nav className="md:hidden mt-4 pb-4 bg-[#FFF1E6] w-full">
+            <ul className="flex flex-col space-y-4 px-4">
+              <li>
                 <Link 
                   to="/" 
-                  className="text-xl text-[#3A3335] hover:text-[#FF7F50] font-medium block"
+                  className="text-lg text-[#3A3335] hover:text-[#FF7F50] font-medium block py-2 border-b border-gray-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
                 </Link>
               </li>
-              <li className="mb-4">
+              <li>
                 <Link 
                   to="/faq" 
-                  className="text-xl text-[#3A3335] hover:text-[#FF7F50] font-medium block"
+                  className="text-lg text-[#3A3335] hover:text-[#FF7F50] font-medium block py-2 border-b border-gray-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   FAQ
                 </Link>
               </li>
-              <li className="mb-4">
-                <a 
-                  href="https://calicocatcafe.setmore.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block"
-                >
-                  Book Now
-                </a>
+              <li>
+                <AcuityButton className="w-full text-left">
+                  <span className="text-lg text-[#3A3335] hover:text-[#FF7F50] font-medium block py-2">
+                    Book Now
+                  </span>
+                </AcuityButton>
               </li>
               <li>
                 <Link 
                   to="/our-story" 
-                  className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block"
+                  className="text-lg text-[#3A3335] hover:text-[#FF7F50] font-medium block py-2 border-b border-gray-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Our Story
@@ -162,7 +172,7 @@ export const Header = () => {
               <li>
                 <Link 
                   to="/our-team" 
-                  className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block"
+                  className="text-lg text-[#3A3335] hover:text-[#FF7F50] font-medium block py-2 border-b border-gray-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Our Team
@@ -171,60 +181,55 @@ export const Header = () => {
               <li>
                 <Link 
                   to="/rescues" 
-                  className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block"
+                  className="text-lg text-[#3A3335] hover:text-[#FF7F50] font-medium block py-2 border-b border-gray-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Rescues
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block">
-                  Sponsors
-                </a>
-              </li>
-              <li>
                 <Link 
                   to="/menu" 
-                  className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block"
+                  className="text-lg text-[#3A3335] hover:text-[#FF7F50] font-medium block py-2 border-b border-gray-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Menu
                 </Link>
               </li>
-              <li>
-                <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block">
-                  Shop
+              
+              {/* Social Icons */}
+              <div className="flex justify-center space-x-6 pt-4">
+                <a 
+                  href="https://www.instagram.com/calicocatcafenj/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#3A3335] hover:text-[#FF7F50] transition-colors"
+                  aria-label="Instagram"
+                >
+                  <InstagramIcon size={24} />
                 </a>
-              </li>
-              <li>
-                <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block">
-                  Employment
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7] font-medium block">
-                  FAQ
-                </a>
-              </li>
-              <div className="flex space-x-4 pt-3">
-                <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7]">
-                  <InstagramIcon size={20} />
-                </a>
-                <a href="#" className="text-[#3A3335] hover:text-[#FFCAA7]">
-                  <FacebookIcon size={20} />
+                <a 
+                  href="https://www.facebook.com/p/Calico-Cat-Cafe-61578005157205/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#3A3335] hover:text-[#FF7F50] transition-colors"
+                  aria-label="Facebook"
+                >
+                  <FacebookIcon size={24} />
                 </a>
                 <a 
                   href="https://www.tiktok.com/@calicocatcafenj" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-[#3A3335] hover:text-[#FFCAA7]"
+                  className="text-[#3A3335] hover:text-[#FF7F50] transition-colors"
                   aria-label="TikTok"
                 >
-                  <TikTokIcon className="w-5 h-5" />
+                  <TikTokIcon className="w-6 h-6" />
                 </a>
               </div>
             </ul>
-          </nav>}
+          </nav>
+        )}
       </div>
     </header>
   );
